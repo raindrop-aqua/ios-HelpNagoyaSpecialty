@@ -10,8 +10,10 @@
 		067F12B222426779007A671D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F12B122426779007A671D /* AppDelegate.swift */; };
 		067F12B422426779007A671D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F12B322426779007A671D /* ViewController.swift */; };
 		067F12B722426779007A671D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067F12B522426779007A671D /* Main.storyboard */; };
-		067F12B92242677A007A671D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067F12B82242677A007A671D /* Assets.xcassets */; };
 		067F12BC2242677A007A671D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067F12BA2242677A007A671D /* LaunchScreen.storyboard */; };
+		067F12C52242735C007A671D /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067F12C42242735C007A671D /* SpriteKit.framework */; };
+		067F12C72242745B007A671D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F12C62242745B007A671D /* GameScene.swift */; };
+		06F83AB5224516AD0066E632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F83AB4224516AD0066E632 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +21,11 @@
 		067F12B122426779007A671D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		067F12B322426779007A671D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		067F12B622426779007A671D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		067F12B82242677A007A671D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		067F12BB2242677A007A671D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		067F12BD2242677A007A671D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		067F12C42242735C007A671D /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		067F12C62242745B007A671D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		06F83AB4224516AD0066E632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067F12C52242735C007A671D /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				067F12B022426779007A671D /* ios-HelpNagoyaSpecialty */,
 				067F12AF22426779007A671D /* Products */,
+				067F12C32242735C007A671D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +60,23 @@
 		067F12B022426779007A671D /* ios-HelpNagoyaSpecialty */ = {
 			isa = PBXGroup;
 			children = (
+				06F83AB4224516AD0066E632 /* Assets.xcassets */,
 				067F12B122426779007A671D /* AppDelegate.swift */,
 				067F12B322426779007A671D /* ViewController.swift */,
 				067F12B522426779007A671D /* Main.storyboard */,
-				067F12B82242677A007A671D /* Assets.xcassets */,
+				067F12C62242745B007A671D /* GameScene.swift */,
 				067F12BA2242677A007A671D /* LaunchScreen.storyboard */,
 				067F12BD2242677A007A671D /* Info.plist */,
 			);
 			path = "ios-HelpNagoyaSpecialty";
+			sourceTree = "<group>";
+		};
+		067F12C32242735C007A671D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				067F12C42242735C007A671D /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				067F12BC2242677A007A671D /* LaunchScreen.storyboard in Resources */,
-				067F12B92242677A007A671D /* Assets.xcassets in Resources */,
+				06F83AB5224516AD0066E632 /* Assets.xcassets in Resources */,
 				067F12B722426779007A671D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067F12C72242745B007A671D /* GameScene.swift in Sources */,
 				067F12B422426779007A671D /* ViewController.swift in Sources */,
 				067F12B222426779007A671D /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9M27SHLK7P;
 				INFOPLIST_FILE = "ios-HelpNagoyaSpecialty/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9M27SHLK7P;
 				INFOPLIST_FILE = "ios-HelpNagoyaSpecialty/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
